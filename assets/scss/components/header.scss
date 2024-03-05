@@ -1,0 +1,122 @@
+.header {
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 1560px) {
+            justify-content: space-between;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+
+    &__wrapper1 {
+        background-color: rgba(15, 15, 15, 1);
+    }
+
+    &__nav1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px 17px 11px 0;
+        max-height: 39px;
+        list-style: none;
+
+        &-wrapper {
+            display: flex;
+            gap: 70px;
+
+            @media (max-width: 700px) {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__item:first-child {
+        padding-left: 163px;
+
+        @media (max-width: 1550px) {
+            padding-left: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        gap: 5px;
+        text-decoration: none;
+
+        p {
+            white-space: nowrap;
+            font-family: var(--font-family);
+            font-size: 14px;
+            color: #FFFFFF;
+
+            strong {
+                color: var(--orange-color);
+            }
+        }
+    }
+
+
+
+    &__wrapper2 {
+        background-color: rgba(46, 46, 46, 1);
+        padding: 25px 0;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 0px;
+        left: 157px;
+        padding: 22px 13px 14px 12px;
+        background-color: rgba(46, 46, 46, 1);
+        z-index: 50;
+
+        @media(max-width:1560px) {
+            position: relative;
+            left: 0;
+            padding: 0;
+        }
+
+        img {
+            @media (max-width: 1550px) {
+                max-width: 70px;
+            }
+        }
+    }
+
+    &__nav2 {
+        display: flex;
+        gap: 40px;
+
+        @media(max-width: 1550px) {
+            text-align: center;
+        }
+
+        @media(max-width: 674px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__link2 {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-size: 18px;
+        color: var(--white-color);
+    }
+
+    &__link2:focus {
+        position: static;
+        padding: 8px 10px 23px 10px;
+        background-color: var(--orange-color);
+    }
+}

@@ -1,0 +1,48 @@
+.doing {
+    padding: 73px 0 60px 0;
+    background: url(/assets/img/whatwedo-bg.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+
+
+
+    &__text {
+        max-width: 960px;
+        text-align: justify;
+
+        p {
+            font-size: 18px;
+            font-family: var(--font-family);
+            color: var(--white-color);
+            line-height: 2;
+            margin-bottom: 47px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 78px;
+        font-weight: bold;
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: 14px 62px;
+        background-color: var(--orange-color);
+        border: none;
+        font-size: 18px;
+        font-family: var(--font-family);
+        color: var(--white-color);
+        font-weight: bold;
+        line-height: 1.333;
+    }
+
+    &__button:hover {
+        background-color: transparent;
+        border: 1px solid var(--white-color);
+        transition: 0.3s;
+    }
+
+
+}

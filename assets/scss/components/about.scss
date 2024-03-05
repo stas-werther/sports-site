@@ -1,0 +1,57 @@
+.about {
+    background: url(/assets/img/Grand.png) no-repeat center;
+    background-size: cover;
+    padding: 95px 0 65px 0;
+
+    &__text {
+        max-width: 659px;
+
+        p {
+            font-family: var(--font-family);
+            font-size: 18px;
+            font-style: normal;
+            text-align: justify;
+            color: #FFFFFF;
+            line-height: 2;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+    }
+
+    &__subtitle {
+        font-family: var(--font-family);
+        font-size: 24px;
+        color: var(--white-color);
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            margin: 28px 0;
+            width: 83px;
+            height: 2px;
+            background-color: var(--white-color);
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        padding: 17px 68px 15px 66px;
+        background: transparent;
+        white-space: nowrap;
+        font-family: var(--font-family);
+        font-size: 18px;
+        color: var(--orange-color);
+        border: 2px solid var(--orange-color);
+        margin-left: 430px;
+
+        @media (max-width: 700px) {
+            margin: 0 auto;
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "vars.scss";
+@import "mixin.scss";
+@import "components/header.scss";
+@import "components/hero.scss";
+@import "components/about.scss";
+@import "components/doing.scss";
+@import "components/events.scss";
+@import "components/school.scss";
+@import "components/footer.scss";
+@import "components/media.scss";
+
+.container {
+    max-width: 1229px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-size: 60px;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+
+.button:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
